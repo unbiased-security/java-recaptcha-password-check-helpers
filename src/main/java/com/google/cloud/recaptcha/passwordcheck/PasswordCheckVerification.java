@@ -166,11 +166,11 @@ public final class PasswordCheckVerification {
     return () -> {
       PasswordCheckVerification verification = new PasswordCheckVerification(username);
       String canonicalizedUsername = CryptoHelper.canonicalizeUsername(username);
-      String rawPass = password.getValue();
-      byte[] decodedBytes = Base64.getDecoder().decode(rawPass);
+      String hashedPass = password.getValue();
+      byte[] hashedPassBytes = Base64.getDecoder().decode(hashedPass);
 
       verification.encryptedUserCredentialsHash =
-          verification.cipher.encrypt(decodedBytes);
+          verification.cipher.encrypt(hashedPassBytes);
       verification.lookupHashPrefix =
           CryptoHelper.bucketizeUsername(canonicalizedUsername, USERNAME_HASH_PREFIX_LENGTH);
 
