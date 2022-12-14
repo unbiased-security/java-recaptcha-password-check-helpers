@@ -13,6 +13,7 @@ package com.google.cloud.recaptcha.passwordcheck;
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 import com.google.common.hash.Hashing;
 import com.google.cloud.recaptcha.passwordcheck.utils.BCScryptGenerator;
