@@ -1,0 +1,16 @@
+name: common-trigger
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  title-check:
+    name: title-check
+    uses: unbiased-security/workflows/.github/workflows/pr-title.yml@main
+
+  secrets-check:
+    name: secrets-check
+    uses: unbiased-security/workflows/.github/workflows/secrets-scanner.yml@main
+
