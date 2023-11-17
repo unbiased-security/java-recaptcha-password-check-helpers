@@ -6,8 +6,7 @@
 
   <groupId>security.savvy</groupId>
   <artifactId>recaptcha-password-check-helpers</artifactId>
-  <version>1.0.1</version>
-
+  <version>1.0.2</version>
   <name>reCAPTCHA Password Check Helpers</name>
   <description>
     Helper library to use reCAPTCHA's password leak checkup service.
@@ -22,7 +21,7 @@
   </properties>
 
   <scm>
-    <url>http://github.com/GoogleCloudPlatform/java-recaptcha-password-check-helpers</url>
+    <url>https://github.com/GoogleCloudPlatform/java-recaptcha-password-check-helpers</url>
     <connection>scm:git:git://github.com/GoogleCloudPlatform/java-recaptcha-password-check-helpers.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/GoogleCloudPlatform/java-recaptcha-password-check-helpers.git</developerConnection>
     <tag>HEAD</tag>
@@ -30,25 +29,25 @@
 
   <issueManagement>
     <system>GitHub Issues</system>
-    <url>http://github.com/GoogleCloudPlatform/java-recaptcha-password-check-helpers/issues</url>
+    <url>https://github.com/GoogleCloudPlatform/java-recaptcha-password-check-helpers/issues</url>
   </issueManagement>
 
   <licenses>
     <license>
       <name>Apache 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
 
   <organization>
     <name>Google LLC</name>
-    <url>http://www.google.com</url>
+    <url>https://www.google.com</url>
   </organization>
 
   <developers>
     <developer>
       <organization>Google</organization>
-      <organizationUrl>http://www.google.com</organizationUrl>
+      <organizationUrl>https://www.google.com</organizationUrl>
     </developer>
   </developers>
 
@@ -57,21 +56,21 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
-      <version>30.1-jre</version>
+      <version>32.1.1-jre</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk15on -->
     <dependency>
       <groupId>org.bouncycastle</groupId>
-      <artifactId>bcprov-jdk15on</artifactId>
-      <version>1.68</version>
+      <artifactId>bcprov-jdk18on</artifactId>
+      <version>1.76</version>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/com.google.auto.value/auto-value -->
     <dependency>
         <groupId>com.google.auto.value</groupId>
         <artifactId>auto-value</artifactId>
-        <version>1.7</version>
+        <version>1.10.2</version>
         <scope>provided</scope>
     </dependency>
 
@@ -79,7 +78,7 @@
     <dependency>
         <groupId>com.google.auto.value</groupId>
         <artifactId>auto-value-annotations</artifactId>
-        <version>1.7</version>
+        <version>1.10.2</version>
     </dependency>
 
     <!-- TEST DEPENDENCIES -->
@@ -119,6 +118,20 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>org.owasp</groupId>
+        <artifactId>dependency-check-maven</artifactId>
+        <version>8.3.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 
   <profiles>
