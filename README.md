@@ -8,30 +8,13 @@ need to—decrypt them).
 
 ## Usage
 
-1.  Import [dependency](https://central.sonatype.com/artifact/com.google.cloud/recaptcha-password-check-helpers/1.0.2) in your `pom.xml`:
-
-    ```
-    <dependency>
-      <groupId>com.google.cloud</groupId>
-      <artifactId>recaptcha-password-check-helpers</artifactId>
-      <version>1.0.2</version>
-    </dependency>
-    ```
-
 1.  Create a verifier instance:
-
-    NOTE: `PasswordCheckVerifier` uses an
-    [ExecutorService](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html)
-    to execute the cryptographic functions to generate the request parameters.
-    If no `ExecutorService` is passed when creating a new instance, the
-    constructor will create a new one, so you may want to keep a single instance
-    of `PasswordCheckVerifier` for all your password leak check requests.
 
     ```java
     PasswordCheckVerifier passwordLeak = new PasswordCheckVerifier();
     ```
 
-1.  Create a verification with some user credentials and extract the parameters
+2.  Create a verification with some user credentials and extract the parameters
     generated
 
     ```java
@@ -41,10 +24,10 @@ need to—decrypt them).
     byte[] encryptedUserCredentialsHash = verification.getEncryptedUserCredentialsHash();
     ```
 
-1.  Next, use the parameters generated to include in your reCAPTCHA
+3.  Next, use the parameters generated to include in your reCAPTCHA
     [assessment request](https://cloud.google.com/recaptcha-enterprise/docs/create-assessment)
 
-1.  Then, extract the `reEncryptedUserCredentialsHash` and
+4.  Then, extract the `reEncryptedUserCredentialsHash` and
     `encryptedLeakMatchPrefixes` from the response of the assessment request and
     use them to verify them:
 
@@ -52,7 +35,7 @@ need to—decrypt them).
     PasswordCheckResult result = passwordLeak.verify(verification, reEncryptedUserCredentialsHash, encryptedLeakMatchPrefixes);
     ```
 
-1.  Finally, use the result to determine whether the user credentials are leaked
+5.  Finally, use the result to determine wheter the user credentials are leaked
     or not:
 
     ```java
