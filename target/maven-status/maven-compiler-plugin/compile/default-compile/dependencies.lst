@@ -1,0 +1,10 @@
+classpath:/home/runner/.m2/repository/com/google/guava/guava/32.1.1-jre/guava-32.1.1-jre.jar	3041245:1688135858000
+classpath:/home/runner/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar	4617:1542650246000
+classpath:/home/runner/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar	2199:1536694843000
+classpath:/home/runner/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar	19936:1490936147000
+classpath:/home/runner/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar	223979:1680540455000
+classpath:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar	16017:1673284883000
+classpath:/home/runner/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar	9301:1673409222000
+classpath:/home/runner/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.85/bcprov-jdk18on-1.85.jar	10321819:1783838038000
+classpath:/home/runner/.m2/repository/com/google/auto/value/auto-value/1.10.2/auto-value-1.10.2.jar	4832659:1687969903000
+classpath:/home/runner/.m2/repository/com/google/auto/value/auto-value-annotations/1.10.2/auto-value-annotations-1.10.2.jar	7492:1687969851000

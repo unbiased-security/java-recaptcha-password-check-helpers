@@ -1,0 +1,16 @@
+com/google/cloud/recaptcha/passwordcheck/PasswordCheckVerification.class
+com/google/cloud/recaptcha/passwordcheck/utils/CryptoHelper.class
+com/google/privacy/encryption/commutative/EcCommutativeCipherBase$1.class
+com/google/cloud/recaptcha/passwordcheck/PasswordCheckVerifier.class
+com/google/cloud/recaptcha/passwordcheck/utils/AutoValue_BitPrefix.class
+com/google/cloud/recaptcha/passwordcheck/utils/MessageStrippingException.class
+com/google/privacy/encryption/commutative/EcCommutativeCipher.class
+com/google/privacy/encryption/commutative/EcCommutativeCipherBase.class
+com/google/cloud/recaptcha/passwordcheck/utils/BitPrefix.class
+com/google/cloud/recaptcha/passwordcheck/utils/ScryptGenerator.class
+com/google/privacy/encryption/commutative/EcCommutativeCipherBase$HashType.class
+com/google/privacy/encryption/commutative/SupportedCurve.class
+com/google/cloud/recaptcha/passwordcheck/utils/EmailAddress.class
+com/google/cloud/recaptcha/passwordcheck/utils/BCScryptGenerator.class
+com/google/cloud/recaptcha/passwordcheck/PasswordCheckResult.class
+com/google/cloud/recaptcha/passwordcheck/utils/SensitiveString.class

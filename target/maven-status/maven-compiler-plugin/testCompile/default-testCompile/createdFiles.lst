@@ -1,0 +1,5 @@
+com/google/cloud/recaptcha/passwordcheck/PasswordCheckVerificationTest.class
+com/google/cloud/recaptcha/passwordcheck/PasswordCheckVerificationTest$TestServerResponse.class
+com/google/cloud/recaptcha/passwordcheck/PasswordCheckVerificationTest$Credentials.class
+com/google/cloud/recaptcha/passwordcheck/utils/MessageStrippingExceptionTest.class
+com/google/cloud/recaptcha/passwordcheck/PasswordCheckVerifierTest.class
