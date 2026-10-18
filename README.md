@@ -8,13 +8,13 @@ need to—decrypt them).
 
 ## Usage
 
-1.  Import [dependency](https://central.sonatype.com/artifact/com.google.cloud/recaptcha-password-check-helpers/1.0.2) in your `pom.xml`:
+1.  Import [dependency](https://central.sonatype.com/artifact/com.google.cloud/recaptcha-password-check-helpers/1.0.5) in your `pom.xml`:
 
     ```
     <dependency>
       <groupId>com.google.cloud</groupId>
       <artifactId>recaptcha-password-check-helpers</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.5</version>
     </dependency>
     ```
 
